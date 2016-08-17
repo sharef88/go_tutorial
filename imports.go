@@ -2,9 +2,12 @@ package main
 
 import (
     "fmt"
-    "math"
 )
 
+func add(x int, y int) int {
+    return x + y
+}
+
 func main() {
-    fmt.Printf("now you have %g problems.", math.Sqrt(7))
+    fmt.Println(add(23,45))
 }

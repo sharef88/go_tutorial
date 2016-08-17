@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-    fmt.printf("now you have %g problems.", math.sqrt(7))
+    fmt.Printf("now you have %g problems.", math.Sqrt(7))
 }

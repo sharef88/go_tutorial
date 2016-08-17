@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func add(x, y int) int {
 	return x + y
 }
@@ -14,9 +12,4 @@ func split(sum int) (x, y int) {
 	x = sum * 4 / 9
 	y = sum - x
 	return
-}
-
-func main() {
-	out := 3 << 1
-	fmt.Println(out)
 }

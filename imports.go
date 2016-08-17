@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
 func add(x, y int) int {
 	return x + y
@@ -20,9 +17,6 @@ func split(sum int) (x, y int) {
 }
 
 func main() {
-	var x, y int = 3, 4
-	var f float64 = math.Sqrt(float64(x*x + y*y))
-	var z uint = uint(f)
-	fmt.Println(x, y, z)
-
+	out := 3 << 1
+	fmt.Println(out)
 }

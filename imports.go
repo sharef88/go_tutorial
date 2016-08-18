@@ -1,7 +1,7 @@
 package main
 
 func add(x, y int) int {
-	return x + y.
+	return x + y
 }
 
 func swap(x, y string) (string, string) {

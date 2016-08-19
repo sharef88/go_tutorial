@@ -26,3 +26,6 @@ func main() {
 		pow(3, 3, 10),
 	)
 }
+for index := 0;  < count; ++ {
+	
+}

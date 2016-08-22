@@ -20,6 +20,10 @@ func sqrt(x float64) float64 {
 }
 
 func main() {
-	defer fmt.Println("world")
-	fmt.Println("Hello")
+	fmt.Println("counting")
+
+	for index := 0; index < 10; index++ {
+		defer fmt.Println(index)
+	}
+	fmt.Println("done")
 }

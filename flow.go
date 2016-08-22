@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"time"
-)
+import "fmt"
 
 func sqrt(x float64) float64 {
 	//z = guess
@@ -23,13 +20,6 @@ func sqrt(x float64) float64 {
 }
 
 func main() {
-	t := time.Now()
-	switch {
-	case t.Hour() < 12:
-		fmt.Println("Good Morning")
-	case t.Hour() < 17:
-		fmt.Println("Good afternoon")
-	default:
-		fmt.Println("Good evening")
-	}
+	defer fmt.Println("world")
+	fmt.Println("Hello")
 }

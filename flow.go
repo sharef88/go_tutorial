@@ -5,11 +5,18 @@ import (
 	"math"
 )
 
-func sqrt(x float64) string {
-	if x < 0 {
-		return sqrt(-x) + "i"
+func sqrt(x float64) float64 {
+	z := float64(100)
+
+	step := func() float64 {
+		return z - (z*z-x)/(2*z)
 	}
-	return fmt.Sprint(math.Sqrt(x))
+
+	count := 10
+	for index := 0; index < count; index++ {
+		z = step()
+	}
+	return z
 
 }
 func pow(x, n, lim float64) float64 {
@@ -22,8 +29,5 @@ func pow(x, n, lim float64) float64 {
 }
 
 func main() {
-	fmt.Println(
-		pow(3, 2, 10),
-		pow(3, 3, 10),
-	)
+	fmt.Println(sqrt(10), math.Sqrt(10))
 }

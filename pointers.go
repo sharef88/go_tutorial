@@ -7,16 +7,9 @@ func printSlice(s []int) {
 }
 
 func main() {
-	s := []int{2, 3, 5, 7, 11, 13}
+	var s []int
 	printSlice(s)
-
-	s = s[:0]
-	printSlice(s)
-
-	s = s[:4]
-	printSlice(s)
-
-	s = s[2:]
-	printSlice(s)
-
+	if s == nil {
+		fmt.Println("nil!")
+	}
 }

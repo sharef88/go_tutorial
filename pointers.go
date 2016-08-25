@@ -15,5 +15,12 @@ var (
 )
 
 func main() {
-	fmt.Println(v1, p, v2, v3)
+	var a [2]string
+	a[0] = "hello"
+	a[1] = "World"
+	fmt.Println(a[0], a[1])
+	fmt.Println(a)
+
+	primes := [6]int{2, 3, 5, 7, 11, 13}
+	fmt.Println(primes)
 }

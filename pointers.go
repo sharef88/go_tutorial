@@ -10,6 +10,7 @@ func printSlice(s string, x []int) {
 	fmt.Printf("%s len=%d cap=%d %v\n", s, len(x), cap(x), x)
 }
 
+//Make a matrix to draw a picture
 func Pic(dx, dy int) [][]uint8 {
 	ry := make([][]uint8, dy)
 	for i := range ry {
